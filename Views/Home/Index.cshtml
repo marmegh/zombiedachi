@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-3">
+        Fullness: @ViewBag.Fullness
+    </div>
+    <div class="col-md-3">
+        Happiness: @ViewBag.Happiness
+    </div>
+    <div class="col-md-3">
+        Meals: @ViewBag.Meals
+    </div>
+    <div class="col-md-3">
+        Energy: @ViewBag.Energy
+    </div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="~/images/zombieNinja.jpg" alt="Zombie Ninja" class="img-responsive" />
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <form action = "feed" method = "POST">
+            <input type = "submit" name = "feed" value = "feed">
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action = "play" method = "POST">
+            <input type = "submit" name = "play" value = "play">
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action = "work" method = "POST">
+            <input type = "submit" name = "work" value = "work">
+        </form>
+    </div>
+    <div class="col-md-3">
+        <form action = "sleep" method = "POST">
+            <input type = "submit" name = "sleep" value = "sleep">
+        </form>
+    </div>
+</div>
